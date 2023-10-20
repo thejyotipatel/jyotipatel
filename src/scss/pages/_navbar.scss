@@ -1,0 +1,29 @@
+.header {
+  padding: $size-100 0;
+  @include flex-jSpace_between-aCenter;
+
+  & .logo {
+    a {
+      font-style: italic;
+      color: $clr-neutral-100;
+      font-size: $fs-300;
+      font-weight: $fw-700;
+    }
+  }
+  & .contact-btns {
+    display: flex;
+    gap: 1em;
+    & .contact-btn {
+      padding: 0;
+      margin: 0;
+      font-size: $fs-500;
+      width: fit-content;
+      background-color: transparent;
+      transition: $ts-400;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

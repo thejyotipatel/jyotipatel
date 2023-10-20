@@ -1,0 +1,21 @@
+/* styling */
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.container {
+  $max-width: 1210px;
+  $padding: 1rem;
+  width: calc(min(1000px, 95%));
+  margin-inline: auto;
+}
+
+button {
+  border-radius: $btn-radius;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  transition: $ts-400;
+  cursor: pointer;
+}
